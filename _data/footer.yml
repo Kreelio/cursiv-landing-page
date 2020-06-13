@@ -1,12 +1,12 @@
-- links:
-  - name: About
-    link: /about/
-  - name: Contact
-    link: /contact/
-- links:
-  - name: Login
-    link: /
-    new_window: true
+- links: []
+  # - name: About
+  #   link: /about/
+  # - name: Contact
+  #   link: /contact/
+- links: []
+  # - name: Login
+  #   link: /
+  #   new_window: true
   # - name: Sign Up
   #   link: /
   #   new_window: true

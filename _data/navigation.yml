@@ -2,15 +2,15 @@
 #   link: /pricing/
 #   new_window: false
 #   highlight: false
-- name: About
-  link: /about/
-  new_window: false
-  highlight: false
-- name: Contact
-  link: /contact/
-  new_window: false
-  highlight: false
-- name: Login
-  link: /
+# - name: About
+#   link: /about/
+#   new_window: false
+#   highlight: false
+# - name: Contact
+#   link: /contact/
+#   new_window: false
+#   highlight: false
+- name: Application
+  link: https://dev.actinium.io
   new_window: true
   highlight: false
