@@ -17,7 +17,7 @@
 		"_sass/footer.scss",
 		"_sass/typewriter.scss",
 		"_sass/bookshelf.scss",
-		"_sass/share.css"
+		"_sass/share.scss"
 	],
 	"sourcesContent": [
 		"@import \"mixins/flexbox\";\n@import \"mixins/columns\";\n@import \"variables\";\n@import \"elements\";\n@import \"landing-page\";\n@import \"layout\";\n@import \"pricing\";\n@import \"staff\";\n@import \"contact\";\n@import \"forms\";\n@import \"navigation\";\n@import \"footer\";\n@import \"typewriter\";\n@import \"bookshelf\";\n@import \"share\";\n",
