@@ -22,14 +22,14 @@
 
 
 		<link rel="stylesheet" href="/css/screen.css">
-		<link rel="icon" type="image/png" href="/favicon.png">
+		<link rel="icon" type="image/png" href="/images/quill.svg">
 
 		
 	</head>
 	<body>
 		<header>
 			<div class="container">
-				<div class="company-name"><a href="/"><img src="/images/logo.svg" alt="Hydra Logo" width="95" height="33" /></a></div>
+				<div class="company-name"><a href="/"><img src="/images/quill.svg" alt="Quill Logo" width="95" height="33" /></a></div>
 				<nav>
 	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
 	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a>
@@ -38,22 +38,8 @@
 		
 
 		
-		<a href="/about/
-" class="" >About</a>
-	
-		
-		
-
-		
-		<a href="/contact/
-" class="" >Contact</a>
-	
-		
-		
-
-		
-		<a href="/
-" class=" active" target="_blank">Login</a>
+		<a href="https://dev.actinium.io
+" class="" target="_blank">Application</a>
 	
 </nav>
 
@@ -121,8 +107,32 @@
 				<p>L'edition et la diffusion de compte rendu vous permettent d'unifier les visions et de souligner les éléments importants d'une réunion.</p>
 			</div>
 			<div class="image">
-				<img src="/images/dashboard.png" alt="Screenshot" class="screenshot editable" />
-			</div>
+				<!-- <img src="/images/dashboard.png" alt="Screenshot" class="screenshot editable" /> -->
+        <svg id="loading" viewbox="0 0 100 80">
+          <defs>
+            <linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#4383b8" />
+              <stop offset="100%" stop-color="#4aa06c" />
+            </linearGradient>
+
+            <clipPath id="rects">
+              <rect class="rect" id="rect1" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+              <rect class="rect" id="rect2" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+              <rect class="rect" id="rect3" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+              <rect class="rect" id="rect4" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+              <rect class="rect" id="rect5" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+              <rect class="rect" id="rect6" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+              <rect class="rect" id="rect7" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+            </clipPath>
+          </defs>
+          <!--
+            (100 / sqrt(2 * 30^2)) == 0.707.
+            Used pythagorean principle to scale the rectangles to fit within a 100x100 viewport
+          -->
+          <rect id="container" transform="translate(50) scale(0.707, 0.707) rotate(45)" x="0" y="0" width="100" height="100" fill="url(#gradient)" clip-path="url(#rects)">
+          </rect>
+        </svg>
+      </div>
 		</div>
 	</section>
 
@@ -146,29 +156,13 @@
 
 		<footer>
 			<div class="container">
-				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Edit footer</a></p>
 				<div class="footer-columns">
 					
 					<ul class="footer-links">
 						
-							<li><a  href="/about/
-" >
-								
-								About</a></li>
-						
-							<li><a  href="/contact/
-" >
-								
-								Contact</a></li>
-						
 					</ul>
 					
 					<ul class="footer-links">
-						
-							<li><a target="_blank" href="/
-" >
-								
-								Login</a></li>
 						
 					</ul>
 					
@@ -177,7 +171,7 @@
 					</ul>
 					
 				</div>
-				<p class="copyright">&copy; 2020 MyApp Ltd. • <a href="#">Terms</a> &amp; <a href="#">Privacy</a> • <a href="https://cloudcannon.com/">Template by CloudCannon</a></p>
+				<p class="copyright">&copy; 2020 Quill • <a href="#">Terms</a> &amp; <a href="#">Privacy</a> • <a href="https://cloudcannon.com/">Template by CloudCannon</a></p>
 			</div>
 		</footer>
 		<script>
