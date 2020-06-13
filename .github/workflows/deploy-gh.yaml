@@ -1,0 +1,41 @@
+---
+name: deploy-gh
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      QUILL_ACTOR: "Quill Bot"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Cache gems modules
+        id: cache-node
+        uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: builf jekyll website
+        uses:  lemonarc/jekyll-action@1.0.0
+
+      - uses: docker://peaceiris/gh-pages:v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./_site
+        with:
+          keepFiles: true
+          username: "${{ env.QUILL_ACTOR }}"
+          useremail: "${{ env.QUILL_ACTOR }}@users.noreply.github.com"
+          commitMessage: "chore(ci): deploy landing page"
