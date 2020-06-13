@@ -26,15 +26,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - name: builf jekyll website
-        uses:  lemonarc/jekyll-action@1.0.0
+      # - name: builf jekyll website
+      #   uses:  lemonarc/jekyll-action@1.0.0
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
           publish_branch: gh-pages
           publish_dir: ./_site
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          keepFiles: true
-          username: "${{ env.QUILL_ACTOR }}"
-          useremail: "${{ env.QUILL_ACTOR }}@users.noreply.github.com"
-          commitMessage: "chore(ci): deploy landing page"
+          enable_jekyll: true
+          keep_files: true
+          user_name: "${{ env.QUILL_ACTOR }}"
+          user_email: "${{ env.QUILL_ACTOR }}@users.noreply.github.com"
+          commit_message: "chore(ci): deploy landing page"
