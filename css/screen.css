@@ -61,8 +61,6 @@ header .company-name img { display: block; width: auto; }
 
 .content { background: #fff; padding: 1px 0 0 0; position: relative; }
 
-.screenshot { max-width: 100%; height: auto; display: block; box-shadow: 0 1px 0 #ccc, 0 1px 0 1px #eee; border-radius: 2px; margin-left: auto; margin-right: auto; background: #DDD url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2244%22%20height%3D%2212%22%20viewBox%3D%220%200%2044%2012%22%3E%3Ccircle%20cx%3D%226%22%20cy%3D%226%22%20r%3D%224%22%20fill%3D%22%23eee%22%20%2F%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%226%22%20r%3D%224%22%20fill%3D%22%23eee%22%20%2F%3E%3Ccircle%20cx%3D%2238%22%20cy%3D%226%22%20r%3D%224%22%20fill%3D%22%23eee%22%20%2F%3E%3C%2Fsvg%3E") 4px 4px no-repeat; padding: 20px 0 0 0; position: relative; }
-
 section { padding: 100px 0; }
 
 section + section { padding-top: 0; }
@@ -248,5 +246,60 @@ footer a:hover { color: #fff; }
 footer .legal-line { width: 100%; padding: 30px 0; margin: 0; background-color: #222527; }
 
 footer .legal-line a { font-weight: 600; }
+
+.typewriter { margin-left: 33%; --blue: rgb(246, 113, 50); --blue-dark: rgb(254, 143, 39); --key: #fff; --paper: #EEF0FD; --text: #D3D4EC; --tool: #FBC56C; --duration: 3s; position: relative; animation: bounce var(--duration) linear infinite; }
+
+.typewriter .slide { width: 92px; height: 20px; border-radius: 3px; margin-left: 14px; transform: translateX(14px); background: linear-gradient(var(--blue), var(--blue-dark)); animation: slide var(--duration) ease infinite; }
+
+.typewriter .slide:before, .typewriter .slide:after, .typewriter .slide i:before { content: ''; position: absolute; background: var(--tool); }
+
+.typewriter .slide:before { width: 2px; height: 8px; top: 6px; left: 100%; }
+
+.typewriter .slide:after { left: 94px; top: 3px; height: 14px; width: 6px; border-radius: 3px; }
+
+.typewriter .slide i { display: block; position: absolute; right: 100%; width: 6px; height: 4px; top: 4px; background: var(--tool); }
+
+.typewriter .slide i:before { right: 100%; top: -2px; width: 4px; border-radius: 2px; height: 14px; }
+
+.typewriter .paper { position: absolute; left: 24px; top: -26px; width: 40px; height: 46px; border-radius: 5px; background: var(--paper); transform: translateY(46px); animation: paper var(--duration) linear infinite; }
+
+.typewriter .paper:before { content: ''; position: absolute; left: 6px; right: 6px; top: 7px; border-radius: 2px; height: 4px; transform: scaleY(0.8); background: var(--text); box-shadow: 0 12px 0 var(--text), 0 24px 0 var(--text), 0 36px 0 var(--text); }
+
+.typewriter .keyboard { width: 120px; height: 56px; margin-top: -10px; z-index: 1; position: relative; }
+
+.typewriter .keyboard:before, .typewriter .keyboard:after { content: ''; position: absolute; }
+
+.typewriter .keyboard:before { top: 0; left: 0; right: 0; bottom: 0; border-radius: 7px; background: linear-gradient(135deg, var(--blue), var(--blue-dark)); transform: perspective(10px) rotateX(2deg); transform-origin: 50% 100%; }
+
+.typewriter .keyboard:after { left: 2px; top: 25px; width: 11px; height: 4px; border-radius: 2px; box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key); animation: keyboard var(--duration) linear infinite; }
+
+@keyframes bounce { 85%, 92%, 100% { transform: translateY(0); }
+  89% { transform: translateY(-4px); }
+  95% { transform: translateY(2px); } }
+
+@keyframes slide { 5% { transform: translateX(14px); }
+  15%, 30% { transform: translateX(6px); }
+  40%, 55% { transform: translateX(0); }
+  65%, 70% { transform: translateX(-4px); }
+  80%, 89% { transform: translateX(-12px); }
+  100% { transform: translateX(14px); } }
+
+@keyframes paper { 5% { transform: translateY(46px); }
+  20%, 30% { transform: translateY(34px); }
+  40%, 55% { transform: translateY(22px); }
+  65%, 70% { transform: translateY(10px); }
+  80%, 85% { transform: translateY(0); }
+  92%, 100% { transform: translateY(46px); } }
+
+@keyframes keyboard { 5%, 12%, 21%, 30%, 39%, 48%, 57%, 66%, 75%, 84% { box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key); }
+  9% { box-shadow: 15px 2px 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key); }
+  18% { box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 2px 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key); }
+  27% { box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 12px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key); }
+  36% { box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 12px 0 var(--key), 60px 12px 0 var(--key), 68px 12px 0 var(--key), 83px 10px 0 var(--key); }
+  45% { box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 2px 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key); }
+  54% { box-shadow: 15px 0 0 var(--key), 30px 2px 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key); }
+  63% { box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 12px 0 var(--key); }
+  72% { box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 2px 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key); }
+  81% { box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 12px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key); } }
 
 /*# sourceMappingURL=screen.css.map */
