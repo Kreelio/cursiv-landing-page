@@ -26,13 +26,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      # - name: builf jekyll website
+      # - name: buil jekyll website
       #   uses:  lemonarc/jekyll-action@1.0.0
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
           publish_branch: gh-pages
-          publish_dir: ./_site
+          publish_dir: ./
           github_token: ${{ secrets.GITHUB_TOKEN }}
           enable_jekyll: true
           keep_files: true
