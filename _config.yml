@@ -1,1 +1,8 @@
 remote_theme: CloudCannon/hydra-jekyll-template
+
+plugins:
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
