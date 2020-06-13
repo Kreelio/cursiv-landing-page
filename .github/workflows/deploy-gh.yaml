@@ -30,11 +30,10 @@ jobs:
         uses:  lemonarc/jekyll-action@1.0.0
 
       - uses: peaceiris/actions-gh-pages@v3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./_site
         with:
+          publish_branch: gh-pages
+          publish_dir: ./_site
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           keepFiles: true
           username: "${{ env.QUILL_ACTOR }}"
           useremail: "${{ env.QUILL_ACTOR }}@users.noreply.github.com"
