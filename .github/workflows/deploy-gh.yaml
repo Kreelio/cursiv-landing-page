@@ -3,8 +3,8 @@ name: deploy-gh
 
 on:
   push:
-    # branches:
-    #   - master
+    branches:
+      - master
 
 jobs:
   build-deploy:
