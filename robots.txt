@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://actinium.io/sitemap.xml
