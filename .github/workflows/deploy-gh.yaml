@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      QUILL_ACTOR: "Quill Bot"
+      QUILL_ACTOR: "quill-bot"
 
     steps:
       - name: Checkout
