@@ -13,7 +13,6 @@ disqus_shortname:
 tagline: Votre scribe numérique.
 description: Quill est un assistant numérique pour transcrire vos réunions.
 logo: /images/quill.svg
-image: /images/quill.svg
 lang: fr
 author:
   name: Quill
@@ -72,6 +71,10 @@ defaults:
       path: "contact.html"
     values:
       full_width: true
+  - scope:
+      path: ""
+    values:
+      image: /images/quill.svg
 
 jekyll-archives:
   enabled:
