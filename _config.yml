@@ -2,6 +2,7 @@
 # Site
 
 title: Quill
+
 url: "https://actinium.io"
 baseurl:
 google_analytics_key: "UA-171338794-1"
@@ -9,7 +10,11 @@ google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-description: Votre scribe numérique.
+tagline: Votre scribe numérique.
+description: Quill est un assistant numérique pour transcrire vos réunions.
+logo: /images/quill.svg
+image: /images/quill.svg
+lang: fr
 author:
   name: Quill
   email:
