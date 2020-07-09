@@ -128,9 +128,9 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 4em; line-heigh
 
 @media (min-width: 768px) { .staff li { -webkit-box-flex: 1; -webkit-flex: 1 1 29%; -moz-box-flex: 1; -moz-flex: 1 1 29%; -ms-flex: 1 1 29%; flex: 1 1 29%; } }
 
-.staff .square-image { width: 200px; height: 200px; }
+.staff .square-image { width: 300px; height: 300px; }
 
-.staff .square-image img { border-radius: 200px; }
+.staff .square-image img { border-radius: 300px; }
 
 .staff .name { font-size: 1.3em; margin-top: 20px; }
 
