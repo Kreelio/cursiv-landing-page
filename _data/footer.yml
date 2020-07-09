@@ -1,6 +1,6 @@
-- links: []
-  # - name: About
-  #   link: /about/
+- links:
+  - name: Equipe
+    link: /about/
   # - name: Contact
   #   link: /contact/
 - links: []

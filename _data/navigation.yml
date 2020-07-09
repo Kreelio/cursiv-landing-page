@@ -1,8 +1,8 @@
-# - name: Pricing
-#   link: /pricing/
+- name: Tarification
+  link: /pricing/
 #   new_window: false
 #   highlight: false
-# - name: About
+# - name: Equipe
 #   link: /about/
 #   new_window: false
 #   highlight: false

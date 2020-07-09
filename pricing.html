@@ -1,71 +1,29 @@
 ---
-title: Pricing
-heading: Find the perfect plan for your business
-description: All plans include our award winning sales optimization solution to track your sales in real time.
+title: Tarification
+heading: Trouvez le plan le plus adapté a votre utilisation
+description:
 pricing_table:
-  - name: Basic
+  - name: Beta
     color: "#8e8e8e"
     features:
-      - text: $25 per month
+      - text: Gratuit
         highlight: true
-      - text: Up to 5 users
+      - text: Transcription de fichiers audio
         highlight: false
-      - text: Basic lead scoring
+      - text: 128Mo / enregistrement (~2h)
         highlight: false
-      - text: CRM
+      - text: Enregistrement depuis le navigateur
         highlight: false
-      - text: Basic reporting
-        highlight: false
-      - text: Sales map
+      - text: Importation depuis le cloud
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=basic
-      text: Get started
-  - name: Pro
-    color: "#4a4a4a"
-    features:
-      - text: $99 per month
-        highlight: true
-      - text: Everything in Basic
-        highlight: false
-      - text: Up to 25 users
-        highlight: false
-      - text: Advanced lead scoring
-        highlight: false
-      - text: Pipeline management
-        highlight: false
-      - text: Advanced reporting
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=pro
-      text: Get started
-  - name: Professional
-    color: "#000000"
-    features:
-      - text: $299 per month
-        highlight: true
-      - text: Everything in Basic and Pro
-        highlight: false
-      - text: Up to 100 users
-        highlight: false
-      - text: Campaign builder
-        highlight: false
-      - text: Machine learning
-        highlight: false
-      - text: Calendar
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=professional
-      text: Get started
+      link: https://app.actinium.io
+      text: Essayez gratuitement
+
 faq:
-  - question: What types of payment do you accept?
-    answer: Credit cards including MasterCard, Visa or American Express.
-  - question: Can I change my plan at a later time?
-    answer: Yes, you can upgrade and downgrade your plan at anytime.
-  - question: Do you offer pricing for nonprofit organizations?
-    answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
-  - question: Questions?
-    answer: Contact us for any further questions at <a href="#">john@business.com</a>.
+  - question: Un seul type de plan ?
+    answer: Quill étant actuellement en développement, toutes les fonctionalités sont temporairement disponible gratuitement !
+
 ---
 <div class="plans">
 	{% for plan in page.pricing_table %}
@@ -85,7 +43,7 @@ faq:
 </div>
 
 {% if page.faq %}
-	<h2>Pricing FAQ</h2>
+	<h2>FAQ</h2>
 	<dl class="faq">
 		{% for item in page.faq %}
 			<div>
@@ -95,3 +53,41 @@ faq:
 		{% endfor %}
 	</dl>
 {% endif %}
+
+<!--
+- name: Pro
+color: "#4a4a4a"
+features:
+  - text: $99 per month
+    highlight: true
+  - text: Everything in Basic
+    highlight: false
+  - text: Up to 25 users
+    highlight: false
+  - text: Advanced lead scoring
+    highlight: false
+  - text: Pipeline management
+    highlight: false
+  - text: Advanced reporting
+    highlight: false
+call_to_action:
+  link: http://mysite.com?plan=pro
+  text: Get started
+- name: Professional
+color: "#000000"
+features:
+  - text: $299 per month
+    highlight: true
+  - text: Everything in Basic and Pro
+    highlight: false
+  - text: Up to 100 users
+    highlight: false
+  - text: Campaign builder
+    highlight: false
+  - text: Machine learning
+    highlight: false
+  - text: Calendar
+    highlight: false
+call_to_action:
+  link: http://mysite.com?plan=professional
+  text: Get started -->
