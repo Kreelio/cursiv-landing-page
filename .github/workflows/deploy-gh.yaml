@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      QUILL_ACTOR: "quill-bot"
+      CURSIV_ACTOR: "cursiv-bot"
 
     steps:
       - name: Checkout
@@ -36,6 +36,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # enable_jekyll: true
           keep_files: true
-          user_name: "${{ env.QUILL_ACTOR }}"
-          user_email: "${{ env.QUILL_ACTOR }}@users.noreply.github.com"
+          user_name: "${{ env.CURSIV_ACTOR }}"
+          user_email: "${{ env.CURSIV_ACTOR }}@users.noreply.github.com"
           commit_message: "chore(ci): deploy landing page"

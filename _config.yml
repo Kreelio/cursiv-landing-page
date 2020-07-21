@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: Quill
+title: Cursiv
 
 url: "https://actinium.io"
 baseurl: "https://actinium.io"
@@ -12,15 +12,15 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 tagline: Votre scribe numérique.
-description: Quill est un assistant numérique pour transcrire vos réunions.
-logo: /images/quill.svg
+description: Cursiv est un assistant numérique pour transcrire vos réunions.
+logo: /images/cursiv.svg
 lang: fr
 author:
-  name: Quill
+  name: Cursiv
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Quill
+  name: Cursiv
   links:
     - https://github.com/Kreelio
 
@@ -75,7 +75,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /images/quill.png
+      image: /images/cursiv.png
 
 jekyll-archives:
   enabled:
