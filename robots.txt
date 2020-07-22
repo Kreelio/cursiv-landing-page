@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://actinium.io/sitemap.xml
+Sitemap: https://cursiv.io/sitemap.xml
