@@ -12,6 +12,8 @@ a { color: #00a4ca; text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
+img { width: 100%; }
+
 h1 strong, h2 strong { font-weight: 700; }
 
 h1 { font-weight: 300; font-size: 2.3em; margin: 0; }
@@ -439,7 +441,7 @@ button { font-family: "Nunito Sans"; }
 
 .tools-grid { grid-area: 1 / 1 / 2 / 6; }
 
-.tools-grid img { height: 100px; width: 100px; }
+.fit-picture { width: 100px; height: 100px; }
 
 .gdrive { justify-self: center; }
 
