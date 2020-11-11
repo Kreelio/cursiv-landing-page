@@ -35,7 +35,7 @@ jobs:
           publish_dir: ./_site
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # enable_jekyll: true
-          keep_files: true
+          keep_files: false
           user_name: "${{ env.CURSIV_ACTOR }}"
           user_email: "${{ env.CURSIV_ACTOR }}@users.noreply.github.com"
           commit_message: "chore(ci): deploy landing page"
