@@ -439,8 +439,6 @@ button { font-family: "Nunito Sans"; }
 
 .tools-grid { grid-area: 1 / 1 / 2 / 6; }
 
-.fit-picture { width: 100px; height: 100px; }
-
-.gdrive { justify-self: center; }
+.tools-grid img { height: 100px; width: 100px; }
 
 /*# sourceMappingURL=screen.css.map */
