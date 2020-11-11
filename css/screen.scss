@@ -30,7 +30,31 @@
   grid-area: 1 / 1 / 2 / 6;
 }
 
-.tools-grid img {
+.tools-grid1 { grid-area: 1 / 1 / 2 / 2; }
+.tools-grid2 { grid-area: 1 / 2 / 2 / 3; }
+.tools-grid3 { grid-area: 1 / 3 / 2 / 4; }
+.tools-grid4 { grid-area: 1 / 4 / 2 / 5; }
+.tools-grid5 { grid-area: 1 / 5 / 2 / 6; } 
+
+.tools-grid1 img {
+  height: 100px;
+  width: 100px;
+}
+
+.tools-grid2 img {
+  height: 100px;
+  width: 100px;
+}
+.tools-grid3 img {
+  height: 100px;
+  width: 100px;
+}
+.tools-grid4 img {
+  height: 100px;
+  width: 100px;
+}
+
+.tools-grid5 img {
   height: 100px;
   width: 100px;
 }
