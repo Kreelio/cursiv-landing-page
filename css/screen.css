@@ -449,14 +449,6 @@ button { font-family: "Nunito Sans"; }
 
 .tools-grid5 { grid-area: 1 / 5 / 2 / 6; }
 
-.tools-grid1 img { height: 100px; width: 100px; }
-
-.tools-grid2 img { height: 100px; width: 100px; }
-
-.tools-grid3 img { height: 100px; width: 100px; }
-
-.tools-grid4 img { height: 100px; width: 100px; }
-
-.tools-grid5 img { height: 100px; width: 100px; }
+img { height: 100%; width: 100%; }
 
 /*# sourceMappingURL=screen.css.map */
