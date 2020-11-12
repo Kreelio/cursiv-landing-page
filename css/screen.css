@@ -451,4 +451,14 @@ button { font-family: "Nunito Sans"; }
 
 img { height: 100%; width: 100%; }
 
+h3 { font-size: 1.5em; text-align: center; }
+
+.bottom-cta h3 { font-size: 1.5em; margin-bottom: 50px; }
+
+.tools { height: 25vh; position: relative; }
+
+.vertical-center { margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); }
+
+@media screen and (max-width: 1204px) { svg#loading { height: auto; width: 10rem; } h1 { font-size: 2.5em; } h2 { font-size: 2em; text-align: justify; } h3 { font-size: 1.5em; text-align: center; } p { font-size: 1em; } }
+
 /*# sourceMappingURL=screen.css.map */
