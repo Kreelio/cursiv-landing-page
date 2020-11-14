@@ -56,7 +56,7 @@ header .company-name { font-size: 1.7em; line-height: 0; }
 
 header .company-name a { display: inline-block; }
 
-header .company-name img { display: block; width: auto; }
+header .company-name img { display: block; }
 
 .content { background: #fff; padding: 1px 0 0 0; position: relative; }
 
@@ -449,13 +449,15 @@ button { font-family: "Nunito Sans"; }
 
 .tools-grid5 { grid-area: 1 / 5 / 2 / 6; }
 
-img { height: 100%; width: 100%; }
+.tools-img { height: 100%; width: 100%; }
+
+.logo { height: 100%; width: 3rem; }
 
 h3 { font-size: 1.5em; text-align: center; }
 
 .bottom-cta h3 { font-size: 1.5em; margin-bottom: 50px; }
 
-.tools { height: 25vh; position: relative; }
+.tools { height: 25vh; position: relative; flex-direction: column; }
 
 .vertical-center { margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
