@@ -3,9 +3,9 @@
 
 title: Cursiv
 
-url: "localhost"
-# url: "https://cursiv.io"
-# baseurl: "https://cursiv.io"
+# url: "localhost"
+url: "https://cursiv.io"
+baseurl: "https://cursiv.io"
 app_baseurl: "https://app.cursiv.io"
 google_analytics_key: "UA-171338794-1"
 google_maps_javascript_api_key:
