@@ -46,9 +46,13 @@
   grid-area: 1 / 5 / 2 / 6;
 }
 
-img {
+.tools-img {
   height: 100%;
   width: 100%;
+}
+.logo {
+  height: 100%;
+  width: 3rem;
 }
 h3 {
   font-size: 1.5em;
@@ -62,6 +66,7 @@ h3 {
 .tools {
   height: 25vh;
   position: relative;
+  flex-direction: column;
 }
 
 .vertical-center {

@@ -1,3 +1,7 @@
+# Template use
+
+- https://github.com/CloudCannon/hydra-jekyll-template
+
 # Prerequisite
 
 Install :

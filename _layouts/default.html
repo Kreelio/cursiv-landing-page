@@ -34,11 +34,9 @@
       <div class="container">
         <div class="company-name">
           <a href="{{ site.baseurl }}/"
-            ><img
+            ><img class="logo"
               src="{{ site.baseurl }}/images/cursiv.svg"
               alt="Cursiv Logo"
-              width="95"
-              height="33"
           /></a>
         </div>
         {% include navigation.html %}
@@ -48,13 +46,8 @@
     <footer>
       <div class="container">
         <div class="footer-columns">
-          <ul>
-          <a href="https://www.iubenda.com/privacy-policy/58322074" class="iubenda-white iubenda-embed iub-legal-only" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-          </ul>
           {% for column in site.data.footer %}
           <ul class="footer-links">
-            <li>
-            </li>
             {% for link in column.links %}
             <li>
               <a
@@ -84,8 +77,14 @@
         </div>
         <p class="copyright">
           &copy; {{ site.time | date: '%Y' }} Cursiv •
-          <a href="#">Terms</a> •
-          <a href="https://cloudcannon.com/">Template by CloudCannon</a>
+          <a href="https://cloudcannon.com/">Template by CloudCannon</a> •
+          <a
+          href="https://www.iubenda.com/privacy-policy/42361767"
+          class="iubenda-black iubenda-embed"
+          title="Privacy Policy"
+          >Privacy Policy</a
+        >
+
         </p>
       </div>
     </footer>
@@ -109,6 +108,25 @@
         s0.parentNode.insertBefore(s1, s0);
       })();
     </script>
-	<!-- End of Tawk.to Script -->
+    <!-- End of Tawk.to Script -->
+    <!-- Iubenda.com Script -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var loader = function () {
+          var s = d.createElement("script"),
+            tag = d.getElementsByTagName("script")[0];
+          s.src = "https://cdn.iubenda.com/iubenda.js";
+          tag.parentNode.insertBefore(s, tag);
+        };
+        if (w.addEventListener) {
+          w.addEventListener("load", loader, false);
+        } else if (w.attachEvent) {
+          w.attachEvent("onload", loader);
+        } else {
+          w.onload = loader;
+        }
+      })(window, document);
+    </script>
+    <!-- End of Iubenda.com Script -->
   </body>
 </html>
