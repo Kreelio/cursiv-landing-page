@@ -1,8 +1,8 @@
 - links:
   - name: Equipe
     link: /about/
-  - name: Politique de protection des données
-    link: /privacy/
+  # - name: Politique de protection des données
+  #   link: /privacy/
   # - name: Contact
   #   link: /contact/
 - links: []
