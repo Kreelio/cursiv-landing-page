@@ -82,7 +82,7 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 4em; line-heigh
 
 .square-image img { position: absolute; left: -1000%; right: -1000%; top: -1000%; bottom: -1000%; margin: auto; width: 300px; }
 
-.page { margin-bottom: 0; padding-bottom: 80px; min-height: 64vh; }
+.page { margin-bottom: 0; padding-bottom: 80px; }
 
 .center-text { text-align: center; }
 
@@ -295,7 +295,7 @@ footer .legal-line a { font-weight: 600; }
   72% { box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 2px 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key); }
   81% { box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 12px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key); } }
 
-body { background-color: #1e6cc7; width: 100%; height: 100vh; margin: 0; }
+body { background-color: #2b2b40; width: 100%; height: 100vh; margin: 0; }
 
 .bookshelf_wrapper { height: 200px; position: relative; left: 50%; transform: translate(-60%, 75%); }
 
