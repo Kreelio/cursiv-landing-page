@@ -461,6 +461,18 @@ h3 { font-size: 1.5em; text-align: center; }
 
 .vertical-center { margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
+/* Tooltip container */
+.tooltip { position: relative; display: inline-block; }
+
+/* Tooltip text */
+.tooltip .tooltiptext { visibility: hidden; width: 120px; background-color: #555; color: #fff; text-align: center; padding: 5px 0; border-radius: 6px; /* Position the tooltip text */ position: absolute; z-index: 1; bottom: -24%; left: 50%; margin-left: -60px; /* Fade in tooltip */ opacity: 0; transition: opacity 0.3s; }
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after { content: ""; position: absolute; top: -35%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent #555 transparent; }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+
 @media screen and (max-width: 1204px) { svg#loading { height: auto; width: 10rem; } h1 { font-size: 2.5em; } h2 { font-size: 2em; text-align: justify; } h3 { font-size: 1.5em; text-align: center; } p { font-size: 1em; } }
 
 /*# sourceMappingURL=screen.css.map */
