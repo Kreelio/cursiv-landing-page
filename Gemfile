@@ -8,5 +8,5 @@ group :jekyll_plugins do
   # gem 'jekyll-paginate', '1.1.0'
   gem 'jekyll-seo-tag', '2.7.1'
   gem 'jekyll-sitemap', '1.3.1'
-  gem "sassc", "~> 2.3.0"
+  gem "sassc", "~> 2.4.0"
 end
