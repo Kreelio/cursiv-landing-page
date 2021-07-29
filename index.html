@@ -1,242 +1,47 @@
----
-title: Cursiv
----
-
-<section class="hero">
-  <div class="text-container">
-    <h1 class="editable">Cursiv</strong></h1>
-    <h1 class="editable">votre <strong>scribe numérique</strong></h1>
-    <p class="subtext editable">
-      Débloquez l'accès a l'historique de vos réunions
-    </p>
-  </div>
-</section>
-
-<div class="content">
-  <section>
-    <div class="container flex">
-      <div class="text">
-        <h2>
-          Automatisez la <strong>prise de notes</strong> lors de vos réunions
-        </h2>
-        <p>
-          Avec son moteur de reconnaissance vocale basée sur l'intelligence
-          artificielle, Cursiv est capable de retranscrire textuellement vos
-          réunions.
-        </p>
-      </div>
-      <div class="image">
-        <div class="typewriter">
-          <div class="slide"><i></i></div>
-          <div class="paper"></div>
-          <div class="keyboard"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container flex">
-      <div class="text">
-        <h2>Gardez une trace de vos <strong>décisions</strong></h2>
-        <p>
-          Cursiv vous permet de naviguer au travers de toutes vos réunions
-          enregistrées afin de retrouver l'information qui vous intéresse.
-        </p>
-      </div>
-      <div class="image">
-        <div class="bookshelf_wrapper">
-          <ul class="books_list">
-            <li class="book_item first"></li>
-            <li class="book_item second"></li>
-            <li class="book_item third"></li>
-            <li class="book_item fourth"></li>
-            <li class="book_item fifth"></li>
-            <li class="book_item sixth"></li>
-          </ul>
-          <div class="shelf"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container flex">
-      <div class="text">
-        <h2>
-          Partagez des <strong>comptes rendus</strong> à vos collaborateurs
-        </h2>
-        <p>
-          L'édition et la diffusion de comptes rendus vous permettent d'unifier
-          les visions et de souligner les éléments importants d'une réunion.
-        </p>
-      </div>
-      <div class="image">
-        <svg id="loading" viewbox="0 0 100 80">
-          <defs>
-            <linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#4383b8" />
-              <stop offset="100%" stop-color="#4aa06c" />
-            </linearGradient>
-            <clipPath id="rects">
-              <rect
-                class="rect"
-                id="rect1"
-                x="0"
-                y="0"
-                width="30"
-                height="30"
-                rx="2"
-                ry="2"
-              />
-              <rect
-                class="rect"
-                id="rect2"
-                x="0"
-                y="0"
-                width="30"
-                height="30"
-                rx="2"
-                ry="2"
-              />
-              <rect
-                class="rect"
-                id="rect3"
-                x="0"
-                y="0"
-                width="30"
-                height="30"
-                rx="2"
-                ry="2"
-              />
-              <rect
-                class="rect"
-                id="rect4"
-                x="0"
-                y="0"
-                width="30"
-                height="30"
-                rx="2"
-                ry="2"
-              />
-              <rect
-                class="rect"
-                id="rect5"
-                x="0"
-                y="0"
-                width="30"
-                height="30"
-                rx="2"
-                ry="2"
-              />
-              <rect
-                class="rect"
-                id="rect6"
-                x="0"
-                y="0"
-                width="30"
-                height="30"
-                rx="2"
-                ry="2"
-              />
-              <rect
-                class="rect"
-                id="rect7"
-                x="0"
-                y="0"
-                width="30"
-                height="30"
-                rx="2"
-                ry="2"
-              />
-            </clipPath>
-          </defs>
-          <!--
-            (100 / sqrt(2 * 30^2)) == 0.707. => Used pythagorean principle to scale the rectangles to fit within a 100x100 viewport
-          -->
-          <rect
-            id="container"
-            transform="translate(50) scale(0.707, 0.707) rotate(45)"
-            x="0"
-            y="0"
-            width="100"
-            height="100"
-            fill="url(#gradient)"
-            clip-path="url(#rects)"
-          ></rect>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonial">
-    <div class="container flex">
-      <div class="testimonial-block">
-        <div class="square-image">
-          <img src="{{ site.baseurl }}/images/otis.jpg" alt="Otis" />
-        </div>
-        <blockquote>
-          <p>
-            Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise
-            situation.
-          </p>
-          <p class="author">Otis - Scribe.</p>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <section class="bottom-cta">
-    <h3>Essayez <strong>Cursiv</strong> avec un compte rendu de réunion</h3>
-    <div class="button alt">
-      <a href="{{ site.app_baseurl }}">Démonstration</a>
-    </div>
-  </section>
-    <div class="container flex tools">
-        <center>
-          <h3>Vous pouvez importer vos reunions depuis</h3>
-          <div class="tools-parent">
-            <div class="tools-grid1">
-            <div class="tooltip">
-              <span class="tooltiptext">Google Drive</span>
-              <img class="tools-img"
-              src="{{ site.baseurl }}/images/tools-img/Drive-icon.png"
-            />
-            </div>
-          </div>
-            <div class="tools-grid2">
-            <div class="tooltip">
-              <span class="tooltiptext">Dropbox</span>
-              <img class="tools-img"
-              src="{{ site.baseurl }}/images/tools-img/dropbox-icon.png"
-            />
-            </div>
-          </div>
-            <div class="tools-grid3">
-            <div class="tooltip">
-              <span class="tooltiptext">Local System</span>
-              <img class="tools-img"
-              src="{{ site.baseurl }}/images/tools-img/Filesystem-network-local-icon.png"
-            />
-            </div>
-          </div>
-            <div class="tools-grid4">
-            <div class="tooltip">
-              <span class="tooltiptext">Microsoft OneDrive</span>
-              <img class="tools-img"
-              src="{{ site.baseurl }}/images/tools-img/Microsoft-OneDrive-icon.png"
-            />
-            </div>
-            </div>
-            <div class="tools-grid5">
-              <div class="tooltip">
-                <span class="tooltiptext">Microphone</span>
-                <img class="tools-img"
-                src="{{ site.baseurl }}/images/tools-img/Microphone-icon.png"
-              />
-              </div>
-            </div>
-          </div>
-        </center>
-      </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursiv</title>
+    <!-- Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5fabff738e1c140c2abd2524/default";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!-- End of Tawk.to Script -->
+    <!-- Iubenda.com Script -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var loader = function () {
+          var s = d.createElement("script"),
+            tag = d.getElementsByTagName("script")[0];
+          s.src = "https://cdn.iubenda.com/iubenda.js";
+          tag.parentNode.insertBefore(s, tag);
+        };
+        if (w.addEventListener) {
+          w.addEventListener("load", loader, false);
+        } else if (w.attachEvent) {
+          w.attachEvent("onload", loader);
+        } else {
+          w.onload = loader;
+        }
+      })(window, document);
+    </script>
+    <!-- End of Iubenda.com Script -->
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -6,35 +6,22 @@
 
 Install :
 
-- ruby
-- bundler
-- jekyll
+- npm
 
 # Install dependancies
 
 ```
-➜ bundle install
+➜ make install
 ```
 
 # How to test locally the webstite
 
-- edit `_config.yml` to test locally
-
-```yaml
-url: "localhost"
-# url: "https://cursiv.io"
-# baseurl: "https://cursiv.io"
+```
+make build
+make local
 ```
 
-```sh
-bundle exec jekyll serve
-
-# Or
-
-bundle exec jekyll serve --incremental
-```
-
-# Icones from
+# Icons from
 
 - https://iconarchive.com/
 - https://www.iconsdb.com/
