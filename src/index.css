@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.leading-tight {
+    line-height: 2.25;
+}
+
+#iubenda_policy .iub_container > .iub_footer {
+    visibility: hidden!important; 
+}
+
+#iubenda_policy .iub_footer {
+    visibility: hidden!important;
+}

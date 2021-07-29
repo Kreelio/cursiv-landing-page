@@ -4,11 +4,13 @@
     <hero />
     <header-waves />
     <main-content />
+    <!-- <cardsSection /> -->
     <pricing />
     <faq />
     <equipe />
     <footer-waves />
     <call-to-action />
+    <temoignage />
     <page-footer />
   </div>
 </template>
@@ -23,6 +25,7 @@ import MainContent from './components/MainContent.vue'
 // import CardsSection from './components/CardsSection.vue'
 import Pricing from './components/Pricing.vue'
 import Faq from './components/Faq.vue'
+import Temoignage from './components/Temoignage.vue'
 import Equipe from './components/Equipe.vue'
 import FooterWaves from './components/FooterWaves.vue'
 import CallToAction from './components/CallToAction.vue'
@@ -38,6 +41,7 @@ export default defineComponent({
     // CardsSection,
     Equipe,
     Pricing,
+    Temoignage,
     Faq,
     FooterWaves,
     CallToAction,

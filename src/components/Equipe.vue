@@ -1,35 +1,62 @@
 <template>
-    <section id="equipe" class="bg-gray-100 py-8">
-      <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+    <section class="bg-white border-b py-8">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
           Equipe
         </h1>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
-        <br />
-        <br />
-
-        <table class="rounded-t-lg m-5 w-5/6 mx-auto bg-gray-300 text-gray-900">
-          <tr class="text-left border-b border-gray-300">
-            <th class="px-4 py-3">Germain</th>
-            <th class="px-4 py-3">Adrien</th>
-            <th class="px-4 py-3">Zadkiel</th>
-          </tr>
-          <tr class="bg-gray-100 border-b border-gray-300">
-            <td><img src="./assets/germain.png"></td>
-            <td><img src="./assets/adrien.png"></td>
-            <td><img src="./assets/zadkiel.png"></td>
-          </tr>
-          <tr class="bg-gray-100 border-b border-gray-300">
-            <td class="px-4 py-3">Développeur</td>
-            <td class="px-4 py-3">Infrastructure</td>
-            <td class="px-4 py-3">Développeur</td>
-          </tr>
-
-        </table>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <p class="text-gray-800 text-base px-6 mb-5">
+                <img src="/images/germain.png">
+              </p>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-center">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Germain
+                <br/>
+                Développeur
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <p class="text-gray-800 text-base px-6 mb-5">
+                <img src="/images/adrien.png">
+              </p>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-center">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Adrien
+                <br />
+                Infrastructure
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <p class="text-gray-800 text-base px-6 mb-5">
+                <img src="/images/zadkiel.png">
+              </p>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-center">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Zadkiel
+                <br />
+                Développeur
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </section>    
 </template>
 
 <script lang="ts">
@@ -39,3 +66,4 @@ export default defineComponent({
     name: 'Equipe',
 })
 </script>
+
