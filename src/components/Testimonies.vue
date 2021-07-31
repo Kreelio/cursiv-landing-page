@@ -24,14 +24,13 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-    name: 'Temoignage',
+    name: 'Testimonies',
 })
 </script>
 
 <style scoped>
 .testimonial {
 	margin: 0;
-	/* padding: 100px 0; */
 }
 
 .testimonial-block {

@@ -16,7 +16,7 @@
             <th class="px-4 py-3">Reponse</th>
           </tr>
           <tr class="bg-gray-100 border-b border-gray-300">
-            <td class="px-4 py-3">Un seul type de plan ?</td>
+            <td class="px-4 py-3">Un seul type de plan ? 128Mo / enregistrement (~2h)</td>
             <td class="px-4 py-3">Cursiv étant actuellement en développement, toutes les fonctionalités sont temporairement disponible gratuitement !</td>
           </tr>    
         </table>

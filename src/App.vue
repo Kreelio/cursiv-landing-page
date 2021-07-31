@@ -4,12 +4,11 @@
     <hero />
     <header-waves />
     <main-content />
-    <pricing />
     <faq />
     <integrations />
-    <equipe />
+    <team />
     <footer-waves />
-    <temoignage />
+    <testimonies />
     <page-footer />
   </div>
 </template>
@@ -21,11 +20,10 @@ import NavBar from './components/NavBar.vue'
 import Hero from './components/Hero.vue'
 import HeaderWaves from './components/HeaderWaves.vue'
 import MainContent from './components/MainContent.vue'
-import Pricing from './components/Pricing.vue'
 import Faq from './components/Faq.vue'
 import Integrations from './components/Integrations.vue'
-import Temoignage from './components/Temoignage.vue'
-import Equipe from './components/Equipe.vue'
+import Testimonies from './components/Testimonies.vue'
+import Team from './components/Team.vue'
 import FooterWaves from './components/FooterWaves.vue'
 import PageFooter from './components/PageFooter.vue'
 
@@ -36,9 +34,8 @@ export default defineComponent({
     NavBar,
     Hero,
     MainContent,
-    Equipe,
-    Pricing,
-    Temoignage,
+    Team,
+    Testimonies,
     Faq,
     Integrations,
     FooterWaves,
