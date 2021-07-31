@@ -48,8 +48,6 @@ export default defineComponent({
 
 <style>
 .gradient {
-  /* background: linear-gradient(90deg, #ADB6FF 0%, #D4E09B 100%); */
   background: linear-gradient(90deg, #CD5711 0%, #FCA73D 100%);
-  /* background: linear-gradient(90deg, #2c3e50 0%, #82A3A3 100%); */
 }
 </style>
