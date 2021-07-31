@@ -1,7 +1,3 @@
-# Template use
-
-- https://github.com/CloudCannon/hydra-jekyll-template
-
 # Prerequisite
 
 Install :
@@ -17,11 +13,9 @@ Install :
 # How to test locally the webstite
 
 ```
-make build
 make local
 ```
 
 # Icons from
 
-- https://iconarchive.com/
-- https://www.iconsdb.com/
+- https://undraw.co/illustrations
