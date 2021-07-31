@@ -5,7 +5,7 @@
           <div class="flex-1 mb-6 text-black">
             <a class="text-gray-800 no-underline hover:no-underline font-bold text-xl lg:text-2xl" href="#">
               <svg-icon name="logo" class="h-8 fill-current inline" viewBox="0 0 512.005 512.005" />
-              2021 - Cursiv
+              Cursiv
               <a
                 href="https://www.iubenda.com/privacy-policy/42361767"
                 class="iubenda-black iubenda-embed"
@@ -33,8 +33,5 @@ export default defineComponent({
 	.copyright {
 		font-size: .8em;
 		margin: 0 auto;
-		/* @media #{$tablet} {
-			text-align: center;
-		} */
 	}
 </style>
