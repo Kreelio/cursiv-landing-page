@@ -16,7 +16,7 @@
              Avec son moteur de reconnaissance vocale basée sur l'intelligence artificielle, Cursiv est capable de retranscrire textuellement vos réunions.
             </p>
           </div>
-          <svg-icon name="scaling" class="w-full sm:w-1/2 p-6" viewBox="0 0 1177 598.5" />
+          <svg-icon name="notes" class="w-full sm:w-1/2 p-6" viewBox="0 0 1177 598.5" />
 
         </div>
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
