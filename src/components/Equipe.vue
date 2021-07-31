@@ -67,3 +67,12 @@ export default defineComponent({
 })
 </script>
 
+<style scoped>
+
+img {
+    max-width: 60%;
+    height: auto;
+    margin-left: 5em;
+    margin-top: 4em;
+}
+</style>

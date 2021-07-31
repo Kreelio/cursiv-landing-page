@@ -43,7 +43,7 @@
               L'édition et la diffusion de comptes rendus vous permettent d'unifier les visions et de souligner les éléments importants d'une réunion.
             </p>  
           </div>
-          <svg-icon name="analytics" class="w-full sm:w-1/2 p-6" viewBox="0 0 1177 598.5" />
+          <svg-icon name="collaboration" class="w-full sm:w-1/2 p-6" viewBox="0 0 1177 598.5" />
         </div>
       </div>
     </section>    

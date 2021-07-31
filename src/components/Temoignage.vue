@@ -30,9 +30,8 @@ export default defineComponent({
 
 <style scoped>
 .testimonial {
-	/* background: #f5f5f5; */
 	margin: 0;
-	padding: 100px 0;
+	/* padding: 100px 0; */
 }
 
 .testimonial-block {
