@@ -1,14 +1,14 @@
 <template>
-  <section class="border-b py-8 testimonial">
+    <section id="team" class="bg-white py-8">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-black-800">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
           Temoignage
         </h1>
       <div class="justify-center testimonial-block">
         <div class="square-image">
           <img src="/images/otis.jpg" alt="Otis" />
         </div>
-        <blockquote>
+        <blockquote class="text-gray-800">
           <p>
             Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise
             situation.

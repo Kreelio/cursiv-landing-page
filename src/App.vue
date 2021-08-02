@@ -6,9 +6,10 @@
     <main-content />
     <faq />
     <integrations />
-    <team />
-    <footer-waves />
     <testimonies />
+    <!-- <team /> -->
+    <footer-waves />
+    <call-to-action />
     <page-footer />
   </div>
 </template>
@@ -26,6 +27,7 @@ import Testimonies from './components/Testimonies.vue'
 import Team from './components/Team.vue'
 import FooterWaves from './components/FooterWaves.vue'
 import PageFooter from './components/PageFooter.vue'
+import CallToAction from './components/CallToAction.vue'
 
 export default defineComponent({
   name: 'App',
@@ -40,6 +42,7 @@ export default defineComponent({
     Integrations,
     FooterWaves,
     PageFooter,
+    CallToAction,
   },
 
  
