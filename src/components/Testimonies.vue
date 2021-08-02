@@ -1,7 +1,7 @@
 <template>
   <section class="border-b py-8 testimonial">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white-800">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-black-800">
           Temoignage
         </h1>
       <div class="justify-center testimonial-block">
