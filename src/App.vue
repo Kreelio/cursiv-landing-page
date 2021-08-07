@@ -1,52 +1,20 @@
 <template>
-  <div class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-    <nav-bar />
-    <hero />
-    <header-waves />
-    <main-content />
-    <faq />
-    <integrations />
-    <testimonies />
-    <!-- <team /> -->
-    <footer-waves />
-    <call-to-action />
-    <page-footer />
-  </div>
+  <LayoutDefault>
+    <RouterView/>
+  </LayoutDefault>
 </template>
 
 <script lang="ts">
 
-import { defineComponent } from 'vue'
-import NavBar from './components/NavBar.vue'
-import Hero from './components/Hero.vue'
-import HeaderWaves from './components/HeaderWaves.vue'
-import MainContent from './components/MainContent.vue'
-import Faq from './components/Faq.vue'
-import Integrations from './components/Integrations.vue'
-import Testimonies from './components/Testimonies.vue'
-import Team from './components/Team.vue'
-import FooterWaves from './components/FooterWaves.vue'
-import PageFooter from './components/PageFooter.vue'
-import CallToAction from './components/CallToAction.vue'
+// import { defineComponent } from 'vue'
+import LayoutDefault from './layouts/LayoutDefault.vue';
 
-export default defineComponent({
+export default {
   name: 'App',
   components: {
-    HeaderWaves,
-    NavBar,
-    Hero,
-    MainContent,
-    Team,
-    Testimonies,
-    Faq,
-    Integrations,
-    FooterWaves,
-    PageFooter,
-    CallToAction,
+    LayoutDefault,
   },
-
- 
-})
+}
 </script>
 
 <style>

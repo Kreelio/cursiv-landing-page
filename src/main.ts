@@ -3,20 +3,10 @@ import App from './App.vue'
 import './index.css'
 import 'virtual:svg-icons-register';
 import VueGtag from "vue-gtag";
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { router } from './router';
+
 
 const app = createApp(App)
-const router = createRouter({
-    history: createWebHashHistory(),
-    routes: [
-      { name: 'Home', path: '/', component: App },
-      { name: 'FAQ', path: '/faq', component: App },
-      { name: 'features', path: '/features', component: App },
-      { name: 'team', path: '/team', component: App },
-    ]
-  });
-  
-
 app.use(router)
 
 app.use(VueGtag, {

@@ -2,7 +2,7 @@
   <nav id="header" class="fixed w-full z-30 top-0 text-white z-50">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
-        <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+        <a @click="handleHomeButton" class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
           <svg-icon name="logo" class="h-8 fill-current inline" viewBox="0 0 512.005 512.005" />
           Cursiv
         </a>
@@ -18,13 +18,13 @@
       <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
             <li class="mr-3">
-              <a href="#features" class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">Fonctionnalité</a>
+              <a href="#features" @click="handleHomeButton" class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">Fonctionnalité</a>
             </li>
             <li class="mr-3">
-              <a href="#team" class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">Equipe</a>
+              <a href="#team" @click="goToTeam" class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">Equipe</a>
             </li>
             <li class="mr-3">
-              <a href="#faq" class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">FAQ</a>
+              <a href="#faq" @click="handleHomeButton" class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">FAQ</a>
             </li>
         </ul>
         <button
@@ -59,6 +59,14 @@ function checkParent(t, elm) {
 export default defineComponent({
   components: { SvgIcon },
   name: 'NavBar',
+  methods: {
+    goToTeam(): void {
+        this.$router.push('/team')
+      },
+    handleHomeButton(): void {
+        this.$router.push('/')
+      },
+  },
   mounted() {
       var scrollpos = window.scrollY;
       var header = document.getElementById("header");
@@ -127,7 +135,6 @@ export default defineComponent({
         }
       }
   }
-
 })
 </script>
 
