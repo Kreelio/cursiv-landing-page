@@ -2,7 +2,7 @@
     <section id="pricing" class="bg-gray-100 py-8">
       <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
         <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Vous pouvez importer vos reunions depuis
+          Importez vos réunions depuis
         </h1>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -16,33 +16,33 @@
               <div class="tooltip">
                 <span class="tooltiptext">Google Drive</span>
                   <img src="/tools-img/Drive-icon.png">
-              </div>      
+              </div>
             </td>
             <td class="px-4 py-3">
               <div class="tooltip">
                 <span class="tooltiptext">Dropbox</span>
                   <img src="/tools-img/dropbox-icon.png">
-              </div>      
+              </div>
             </td>
             <td class="px-4 py-3">
               <div class="tooltip">
-                <span class="tooltiptext">Local Storage</span>
+                <span class="tooltiptext">Votre appareil</span>
                   <img src="/tools-img/Filesystem-network-local-icon.png">
-              </div>      
+              </div>
             </td>
             <td class="px-4 py-3">
               <div class="tooltip">
                 <span class="tooltiptext">Microphone</span>
                   <img src="/tools-img/Microphone-icon.png">
-              </div>      
+              </div>
             </td>
             <td class="px-4 py-3">
               <div class="tooltip">
                 <span class="tooltiptext">Microsoft OneDrive</span>
                   <img src="/tools-img/Microsoft-OneDrive-icon.png">
-              </div>      
+              </div>
             </td>
-          </tr>    
+          </tr>
         </table>
       </div>
     </section>
@@ -54,7 +54,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
     name: 'Integrations',
     setup() {
-        
+
     },
 })
 </script>

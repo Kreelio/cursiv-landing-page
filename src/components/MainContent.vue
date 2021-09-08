@@ -1,8 +1,8 @@
 <template>
     <section id="features" class="bg-white border-b py-8">
       <div class="container max-w-5xl mx-auto m-8">
-        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">          
-          Fonctionnalité
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Fonctionnalités
         </h1>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -13,7 +13,7 @@
               Automatisez la prise de notes lors de vos réunions
             </h3>
             <p class="text-gray-600 mb-8">
-             Avec son moteur de reconnaissance vocale basée sur l'intelligence artificielle, Cursiv est capable de retranscrire textuellement vos réunions.
+             Avec son moteur de reconnaissance vocale basée sur l'intelligence artificielle, Cursiv est capable de retranscrire vos réunions en quelques minutes.
             </p>
           </div>
           <svg-icon name="notes" class="w-full sm:w-1/2 p-6" viewBox="0 0 1177 598.5" />
@@ -41,12 +41,12 @@
             </h3>
             <p class="text-gray-600 mb-8">
               L'édition et la diffusion de comptes rendus vous permettent d'unifier les visions et de souligner les éléments importants d'une réunion.
-            </p>  
+            </p>
           </div>
           <svg-icon name="collaboration" class="w-full sm:w-1/2 p-6" viewBox="0 0 1177 598.5" />
         </div>
       </div>
-    </section>    
+    </section>
 </template>
 
 <script lang="ts">

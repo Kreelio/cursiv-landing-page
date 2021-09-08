@@ -1,18 +1,19 @@
 <template>
-  <LayoutDefault>
-    <RouterView/>
-  </LayoutDefault>
+  <layout-default>
+    <home />
+  </layout-default>
 </template>
 
 <script lang="ts">
 
 // import { defineComponent } from 'vue'
 import LayoutDefault from './layouts/LayoutDefault.vue';
-
+import Home from './pages/Home.vue'
 export default {
   name: 'App',
   components: {
     LayoutDefault,
+    Home,
   },
 }
 </script>

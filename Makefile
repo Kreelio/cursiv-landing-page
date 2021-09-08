@@ -8,6 +8,6 @@ install:
 build: install
 	npm run build
 
-.PHONY+=local
-local: install
-	npm run dev
+.PHONY+=dev
+dev: install
+	npm start

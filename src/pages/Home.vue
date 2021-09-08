@@ -1,9 +1,9 @@
 <template>
   <div>
     <main-content />
-    <faq />
     <integrations />
     <testimonies />
+    <faq />
     <footer-waves />
     <call-to-action />
   </div>
@@ -24,8 +24,8 @@ export default defineComponent({
   components: {
     MainContent,
     Testimonies,
-    Faq,
     Integrations,
+    Faq,
     FooterWaves,
     CallToAction,
   },
