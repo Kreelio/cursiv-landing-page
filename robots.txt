@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://cursiv.io/sitemap.xml
