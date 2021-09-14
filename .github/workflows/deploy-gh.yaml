@@ -33,6 +33,7 @@ jobs:
 
   deploy-to-gh-pages:
     runs-on: self-hosted
+    needs: frontend-build
     env:
       CURSIV_ACTOR: "cursiv-bot"
     steps:
