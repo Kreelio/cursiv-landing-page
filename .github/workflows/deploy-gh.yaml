@@ -46,7 +46,7 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./dist
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          keep_files: false
+          keep_files: true
           user_name: "${{ env.CURSIV_ACTOR }}"
           user_email: "${{ env.CURSIV_ACTOR }}@users.noreply.github.com"
           commit_message: "chore(ci): deploy landing page"
