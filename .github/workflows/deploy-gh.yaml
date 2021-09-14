@@ -24,7 +24,7 @@ jobs:
           key: ${{ runner.os }}-node-frontend-${{ hashFiles('./front/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-frontend-
       - name: Build application
-        run: make build-frontend
+        run: make build
       - name: Upload applicaton dist
         uses: actions/upload-artifact@v2
         with:
