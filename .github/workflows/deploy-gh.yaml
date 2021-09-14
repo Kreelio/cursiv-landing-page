@@ -20,7 +20,7 @@ jobs:
         id: cache-node
         uses: actions/cache@v2
         with:
-          path: ./front/node_modules
+          path: ./node_modules
           key: ${{ runner.os }}-node-frontend-${{ hashFiles('./front/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-frontend-
       - name: Build application
