@@ -33,10 +33,13 @@ jobs:
 
   deploy-to-gh-pages:
     runs-on: self-hosted
-
     env:
       CURSIV_ACTOR: "cursiv-bot"
     steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: frontend_build
+          path: dist
       - uses: peaceiris/actions-gh-pages@v3
         with:
           publish_branch: gh-pages
