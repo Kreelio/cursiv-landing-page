@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.leading-tight {
+    line-height: 2.25;
+}

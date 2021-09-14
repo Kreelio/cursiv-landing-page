@@ -7,34 +7,41 @@ on:
       - master
 
 jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
+  frontend-build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - name: Extract node version
+        run: echo "NODE_VERSION=$(cat .node-version)" >> $GITHUB_ENV
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: "${{ env.NODE_VERSION }}"
+      - name: Cache node modules
+        id: cache-node
+        uses: actions/cache@v2
+        with:
+          path: ./front/node_modules
+          key: ${{ runner.os }}-node-frontend-${{ hashFiles('./front/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-frontend-
+      - name: Build application
+        run: make build-frontend
+      - name: Upload applicaton dist
+        uses: actions/upload-artifact@v2
+        with:
+          name: frontend_build
+          path: dist
+
+  deploy-to-gh-pages:
+    runs-on: self-hosted
 
     env:
       CURSIV_ACTOR: "cursiv-bot"
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Cache gems modules
-        id: cache-node
-        uses: actions/cache@v1
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-
-      - name: build jekyll website
-        uses:  lemonarc/jekyll-action@1.0.0
-
       - uses: peaceiris/actions-gh-pages@v3
         with:
           publish_branch: gh-pages
-          publish_dir: ./_site
+          publish_dir: ./dist
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # enable_jekyll: true
           keep_files: false
           user_name: "${{ env.CURSIV_ACTOR }}"
           user_email: "${{ env.CURSIV_ACTOR }}@users.noreply.github.com"
