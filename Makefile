@@ -2,12 +2,12 @@ all: install build deploy
 
 .PHONY+=install
 install:
-	npm ci
+	@bash -c 'npm ci'
 
 .PHONY+=build
 build: install
-	npm run build
+	@bash -c 'npm run build'
 
 .PHONY+=dev
 dev: install
-	npm start
+	@bash -c 'npm start'
